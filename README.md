@@ -1,3 +1,8 @@
+Yii2 StreamTarget
+=================
+StreamTarget sends log messages to the php stream wrappers (http://php.net/manual/ru/wrappers.php).
+Converts an arrays and objects to strings using Json::encode().
+
 Example config:
 ===============
 
@@ -5,16 +10,16 @@ Example config:
     [
         'targets' => [
             [
-                'class'   => 'codemix\streamlog\Target',
+                'class'   => 'consultnn\streamTarget\StreamTarget',
                 'levels'  => ['error', 'warning'],
-                'url' => 'php://stderr',
+                'stream' => 'php://stderr',
                 'except' => ['yii\web\HttpException:404']
             ],
             [
-                'class'   => 'codemix\streamlog\Target',
-                'levels'  => ['profile'],
-                'url' => 'php://stdout',
-            ],
+                'class'   => 'consultnn\streamTarget\StreamTarget',
+                'levels'  => ['info'],
+                'stream' => 'php://stdout',
+            ]
         ]
     ]
 ```
