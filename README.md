@@ -1,6 +1,7 @@
 Yii2 StreamTarget
 =================
 StreamTarget sends log messages to the [php stream wrappers](http://php.net/manual/ru/wrappers.php).
+
 Converts an arrays and objects to strings using Json::encode().
 
 Example config:

@@ -34,8 +34,7 @@ class StreamTarget extends Target
     public function export()
     {
         foreach ($this->messages as $message) {
-            var_dump($message);
-            var_dump(fwrite($this->_resource, $this->formatMessage($message).PHP_EOL));
+            fwrite($this->_resource, $this->formatMessage($message).PHP_EOL);
         }
     }
 
