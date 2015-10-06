@@ -1,0 +1,21 @@
+{
+    "name": "consultnn/yii2-stream-target",
+    "description": "Yii2 log target for php stream wrappers, like php://stdout",
+    "keywords": ["yii2", "log", "stream", "stdout", "stderr"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sokrat",
+            "email": "sergey.sipatov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "consultnn\\streamTarget\\": "."
+        }
+    },
+    "support": {
+        "email": "tech@consultnn.ru"
+    }
+}
