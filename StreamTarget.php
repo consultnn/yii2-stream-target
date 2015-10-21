@@ -16,7 +16,7 @@ class StreamTarget extends Target
 {
     public $stream;
 
-    private $_resource = null;
+    private $_resource = 'php://stdout';
 
     public function init()
     {
