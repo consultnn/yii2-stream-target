@@ -14,9 +14,9 @@ use yii\log\Target;
  */
 class StreamTarget extends Target
 {
-    public $stream;
+    public $stream = 'php://stdout';
 
-    private $_resource = 'php://stdout';
+    private $_resource ;
 
     public function init()
     {
